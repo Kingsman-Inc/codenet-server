@@ -1,10 +1,8 @@
-providers = ["python"]
-
 [phases.setup]
 nixPkgs = ["python310"]
 
 [phases.install]
-cmds = ["pip install --upgrade pip", "pip install -r requirements.txt"]
+cmds = ["python -m pip install -r requirements.txt"]
 
 [start]
-cmd = "cd Core && gunicorn codenet_server_v3:app --bind 0.0.0.0:${PORT:-8000} --workers 2 --timeout 120"
+cmd = "cd Core && python -m gunicorn codenet_server_v3:app --bind 0.0.0.0:${PORT:-8000} --workers 2 --timeout 120"

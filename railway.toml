@@ -1,9 +1,8 @@
 [build]
 builder = "nixpacks"
-buildCommand = "pip install --upgrade pip && pip install -r requirements.txt"
 
 [deploy]
-startCommand = "cd Core && gunicorn codenet_server_v3:app --bind 0.0.0.0:$PORT --workers 2 --timeout 120"
+startCommand = "cd Core && python -m gunicorn codenet_server_v3:app --bind 0.0.0.0:$PORT --workers 2 --timeout 120"
 healthcheckPath = "/api/health"
 healthcheckTimeout = 300
 restartPolicyType = "on_failure"
