@@ -1,0 +1,52 @@
+{
+  "update_manifest": {
+    "version": "1.4",
+    "patch_version": "1.4.1",
+    "release_date": "2025-10-19T12:43:05.636180",
+    "update_available": true,
+    "force_update": false,
+    "critical_update": false,
+    "update_types": {
+      "complete": {
+        "recommended_for": [
+          "new_install",
+          "major_upgrade"
+        ],
+        "file": "Kingsman_Menu_v1.4_Complete.exe",
+        "url": "http://localhost:8080/downloads/complete/",
+        "size_mb": 12.5
+      },
+      "patch": {
+        "recommended_for": [
+          "existing_v1.4"
+        ],
+        "file": "Kingsman_Menu_v1.4.1_Patch.exe",
+        "url": "http://localhost:8080/downloads/patch/",
+        "size_mb": 8.2
+      },
+      "updater": {
+        "recommended_for": [
+          "auto_update"
+        ],
+        "file": "Kingsman_Menu_v1.4_Updater.exe",
+        "url": "http://localhost:8080/downloads/updater/",
+        "size_mb": 10.1
+      }
+    },
+    "compatibility": {
+      "min_version": "1.0",
+      "max_version": "1.3.1",
+      "migration_required": false
+    },
+    "rollback": {
+      "supported": true,
+      "backup_created": true,
+      "rollback_versions": [
+        "1.3.1",
+        "1.3.0",
+        "1.2",
+        "1.1"
+      ]
+    }
+  }
+}

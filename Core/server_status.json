@@ -1,0 +1,52 @@
+﻿{
+  "server_name": "CodeNet Menu Server",
+  "version": "1.4.2",
+  "status": "online",
+  "last_update": "2025-10-19T16:03:42.409130",
+  "sync_system": {
+    "enabled": true,
+    "method": "github_api",
+    "repository": "CodeNetInc/CodeNet-menu",
+    "files_monitored": [
+      "version.json",
+      "main_app",
+      "update_config",
+      "games_config",
+      "readme",
+      "changelog"
+    ],
+    "last_commit": null
+  },
+  "files": {
+    "version.json": {
+      "path": "version.json",
+      "exists": true,
+      "size": 434
+    },
+    "main_app": {
+      "path": "Source/Core/CodeNet Menu (2).py",
+      "exists": false,
+      "size": 0
+    },
+    "update_config": {
+      "path": "update_config.json",
+      "exists": false,
+      "size": 0
+    },
+    "games_config": {
+      "path": "games_paths.json",
+      "exists": false,
+      "size": 0
+    },
+    "readme": {
+      "path": "README.md",
+      "exists": false,
+      "size": 0
+    },
+    "changelog": {
+      "path": "CHANGELOG.md",
+      "exists": false,
+      "size": 0
+    }
+  }
+}
