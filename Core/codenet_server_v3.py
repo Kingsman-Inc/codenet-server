@@ -516,6 +516,12 @@ def main():
         sys.exit(1)
 
 
+# Criar instância do servidor para Gunicorn
+server_instance = CodeNetServerV3()
+app = server_instance.app
+
+
 if __name__ == "__main__":
     main()
+
 
