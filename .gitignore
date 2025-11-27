@@ -1,4 +1,4 @@
-# Python
+﻿# Python
 __pycache__/
 *.py[cod]
 *$py.class
@@ -26,7 +26,7 @@ env/
 ENV/
 .venv
 
-# IDE
+# IDEs
 .vscode/
 .idea/
 *.swp
@@ -34,25 +34,45 @@ ENV/
 *~
 
 # Logs
-logs/*.log
 *.log
-
-# Environment variables
-.env
-.env.local
-
-# OS
-.DS_Store
-Thumbs.db
-
-# Config (sensitive data)
-Core/config/api_keys.json
-Core/config/active_sessions.json
+logs/
+*.log.*
 
 # Backups
+*.backup
 *.backup.*
-backups/
+*.bak
+*.old
 
-# Monitoring
-Monitoring/
-CodeNet Monitor v4.2.0/
+# Config
+.env
+*.key
+*.pem
+secrets/
+
+# Sistema
+.DS_Store
+Thumbs.db
+*.tmp
+
+# Builds
+*.exe
+*.pkg
+*.zip
+*.tar.gz
+
+# Database
+*.db
+*.sqlite
+*.sqlite3
+
+# Cache
+.cache/
+*.cache
+
+# Tarot IA gerados
+leitura_tarot_*.json
+relatorio_tarot_*.md
+
+# Scripts de organizacao (temporarios)
+organize_project*.ps1
